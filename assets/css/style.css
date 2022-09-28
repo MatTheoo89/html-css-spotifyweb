@@ -22,6 +22,17 @@ a {
   text-decoration: none;
 }
 
+h2,
+h3 {
+  color: #fff;
+  font-weight: 800;
+}
+
+span {
+  color: #797B7F;
+  font-size: .7rem;
+  font-weight: 600;
+}
 
 /********************  UTILITY  ********************/
 
@@ -76,6 +87,10 @@ a {
 
 /***************  PADDING  ***************/
 
+.pad-0_5 {
+  padding: .5rem;
+}
+
 .pad-1 {
   padding: 1rem;
 }
@@ -97,6 +112,10 @@ a {
 }
 
 /***************  MARGIN  ***************/
+
+.m-bottom-0_5 {
+  margin-bottom: .5rem;
+}
 
 .m-bottom-1 {
   margin-bottom: 1rem;
@@ -144,6 +163,7 @@ a {
   width: 100%;
   height: calc(100vh - 90px);
   background-color: #141922;
+  overflow: auto;
 }
 
 .col {
@@ -193,19 +213,35 @@ a {
   text-transform: uppercase;
 }
 
-/*DEBUG*/
-.row {
-  min-height: 200px;
-}
-
 
 /*********  ROW  *********/
 
-.card {
-  width: 200px;
-  height: 350px;
-  background-color: rgba(255, 255, 255, 0.479);
+.row h2 {
+  color: #fff;
+  font-weight: 800;
 }
+
+.row span {
+  padding-bottom: 1.5rem;
+}
+
+.row .box {
+  padding-top: .9rem;
+}
+
+.card {
+  max-width: calc(100% / 6);
+}
+
+.card .card-text h3 {
+  font-size: .8rem;
+  margin-bottom: .5rem;
+}
+
+.card img.circle {
+  clip-path: circle(50%);
+}
+
 
 /********************  FOOTER  ********************/
 
