@@ -383,11 +383,46 @@ footer {
 /*********  F_CENTER  *********/
 
 .f-center {
+  flex-direction: column;
   width: 100%;
   height: 100%;
   flex-shrink: 1;
-  background-color: aqua;
 }
+
+.f-center .box-footer {
+  width: 90%;
+  flex-direction: column;
+}
+
+.f-center_icon i {
+  color: #fff;
+  padding: 5px 15px;
+  margin-bottom: 10px;
+  font-size: 1.7rem;
+}
+
+.f-center_bar {
+  width: 100%;
+}
+
+.f-center_bar span {
+  padding: 0 15px;
+}
+
+.bar-holder {
+  background-color: rgba(190, 190, 190, 0.6);
+  height: 6px;
+  width: 60%;
+  border-radius: 50px;
+}
+
+.bar-holder .bar {
+  background-color: #adadad;
+  height: 6px;
+  width: 30%;
+  border-radius: 50px;
+}
+
 
 /*********  RIGHT  *********/
 
