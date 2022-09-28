@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #18315f;
+  background-color: #141922;
 }
 
 img {
@@ -61,6 +61,10 @@ a {
   justify-content: space-between;
 }
 
+.j-center {
+  justify-content: center;
+}
+
 /********************  TESTO - FORMATTAZIONE  ********************/
 
 .text-c {
@@ -77,12 +81,20 @@ a {
   padding: 1rem;
 }
 
+.pad-1_5 {
+  padding: 1.5rem;
+}
+
 .pad-2 {
-  padding: 1rem;
+  padding: 2rem;
+}
+
+.pad-2_5 {
+  padding: 2.5rem;
 }
 
 .pad-3 {
-  padding: 1rem;
+  padding: 3rem;
 }
 
 /***************  MARGIN  ***************/
@@ -91,8 +103,16 @@ a {
   margin-bottom: 1rem;
 }
 
+.m-bottom-1_5 {
+  margin-bottom: 1.5rem;
+}
+
 .m-bottom-2 {
   margin-bottom: 2rem;
+}
+
+.m-bottom-2_5 {
+  margin-bottom: 2.5rem;
 }
 
 .m-bottom-3 {
@@ -110,14 +130,14 @@ a {
 /********************  BUTTON  ********************/
 
 .btn {
-  border: none;
-  padding: 5px 10px;
+  border: 2px solid #fff;
+  border-radius: 50px;
+  padding: 15px 35px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
 }
-
 
 
 /********************  SIDEBAR  ********************/
@@ -131,19 +151,21 @@ a {
   left: 0;
   z-index: 999;
   width: 230px;
-  height: calc(100vh - 100px);
+  height: calc(100vh - 90px);
 }
 
 
 /********************  MAIN  ********************/
 
 main {
-  background-color: #18315f;
-  height: calc(100vh - 100px);
+  background-color: #141922;
+  height: calc(100vh - 90px);
   margin-left: 230px;
   overflow: auto;
   /*Altezza footer*/
 }
+
+/*********  HEADER  *********/
 
 .header {
   position: fixed;
@@ -153,10 +175,31 @@ main {
   width: 100%;
   color: white;
   background-color: rgba(0, 0, 0, .7);
-  height: 100px;
+  height: 90px;
   justify-content: end;
   padding-right: 50px;
 }
+
+.btn a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/*********  MENU LISTA  *********/
+
+.main-menu .lista ul li {
+  padding: 0 15px;
+  color: #797B7F;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/*DEBUG*/
+.row {
+  min-height: 200px;
+}
+
 
 
 /********************  FOOTER  ********************/
@@ -164,32 +207,27 @@ main {
 footer {
   width: 100%;
   background-color: #252425;
-  height: 100px;
+  height: 90px;
 }
-
-.f-left,
-.f-center,
-.f-right {
-  width: calc(100% / 3);
-  height: 100%;
-}
-
-
-/********************  DEBUG  ********************/
 
 .f-left {
-  flex-shrink: 0;
+  width: 250px;
+  height: 100%;
+  flex-shrink: 1;
   background-color: antiquewhite;
 }
 
 .f-center {
+  width: calc(100% - 500px);
+  height: 100%;
   flex-shrink: 1;
-
   background-color: aqua;
 }
 
 .f-right {
-  flex-shrink: 0;
+  height: 100%;
+  width: 250px;
+  flex-shrink: 1;
   background-color: beige;
 }
 
