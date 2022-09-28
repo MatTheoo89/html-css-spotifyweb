@@ -173,7 +173,7 @@ span {
   border: 2px solid #f39;
   color: #fff;
   background-color: #000;
-
+  position: relative;
 }
 
 .col-2 {
@@ -181,6 +181,7 @@ span {
 }
 
 /********************  SIDEBAR  ********************/
+
 .sidebar img {
   width: 75%;
 }
@@ -191,7 +192,8 @@ span {
   font-weight: 600;
 }
 
-.sidebar-menu li img {
+.sidebar-menu li img,
+.bottom-sidebar .top img {
   display: inline-block;
   width: 2rem;
   vertical-align: middle;
@@ -214,6 +216,25 @@ span {
   font-size: 2rem;
   color: #000;
   font-weight: 700;
+}
+
+.bottom-sidebar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-sidebar .top img {
+  width: 1.5rem;
+}
+
+.bottom-sidebar .bottom img {
+  background-color: grey;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  padding: 3px;
+  margin-right: 10px;
 }
 
 /*********  HEADER  *********/
