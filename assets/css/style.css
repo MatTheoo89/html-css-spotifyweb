@@ -363,7 +363,7 @@ footer {
 }
 
 .f-left img {
-  width: 25%;
+  width: 20%;
   margin-right: 10px;
 }
 
@@ -398,7 +398,7 @@ footer {
   color: #fff;
   padding: 5px 15px;
   margin-bottom: 10px;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .f-center_bar {
@@ -417,7 +417,7 @@ footer {
 }
 
 .bar-holder .bar {
-  background-color: #adadad;
+  background-color: #e9e8e8;
   height: 6px;
   width: 30%;
   border-radius: 50px;
@@ -431,5 +431,28 @@ footer {
   height: 100%;
   width: calc(100% / 4);
   flex-shrink: 1;
-  background-color: beige;
+}
+
+.f-right-icon {
+  width: 40%;
+}
+
+.f-right-icon i {
+  color: #fff;
+  padding: 5px 5px;
+  font-size: .8rem;
+}
+
+.f-right_bar {
+  background-color: rgba(190, 190, 190, 0.6);
+  height: 6px;
+  width: 60%;
+  border-radius: 50px;
+}
+
+.f-right_bar .bar-holder {
+  background-color: #e9e8e8;
+  height: 6px;
+  width: 30%;
+  border-radius: 50px;
 }
