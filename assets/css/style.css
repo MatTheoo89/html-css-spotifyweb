@@ -181,7 +181,40 @@ span {
 }
 
 /********************  SIDEBAR  ********************/
+.sidebar img {
+  width: 75%;
+}
 
+.sidebar-menu li span {
+  color: #797B7F;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.sidebar-menu li img {
+  display: inline-block;
+  width: 2rem;
+  vertical-align: middle;
+  padding-right: 5px;
+}
+
+.playlist h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+}
+
+.playlist .create-playlist .square {
+  width: 30px;
+  height: 30px;
+  background-color: #797B7F;
+  margin-right: 10px;
+}
+
+.playlist .create-playlist .square span {
+  font-size: 2rem;
+  color: #000;
+  font-weight: 700;
+}
 
 /*********  HEADER  *********/
 
