@@ -163,14 +163,12 @@ span {
   width: 100%;
   height: calc(100vh - 90px);
   background-color: #141922;
-  overflow: auto;
 }
 
 .col {
   width: 230px;
   flex-shrink: 0;
   height: 100%;
-  border: 2px solid #f39;
   color: #fff;
   background-color: #000;
   position: relative;
@@ -178,6 +176,8 @@ span {
 
 .col-2 {
   width: calc(100% - 230px);
+  overflow: auto;
+
 }
 
 /********************  SIDEBAR  ********************/
@@ -208,7 +208,7 @@ span {
   display: none;
   content: '';
   position: absolute;
-  left: -24px;
+  left: -22px;
   top: 15px;
   background-color: greenyellow;
   height: 36px;
