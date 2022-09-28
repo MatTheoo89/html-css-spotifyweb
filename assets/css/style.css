@@ -8,7 +8,6 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #141922;
 }
 
 img {
@@ -139,31 +138,30 @@ a {
   cursor: pointer;
 }
 
+/********************  MAIN-WRAPPER  ********************/
 
-/********************  SIDEBAR  ********************/
+.main-wrapper {
+  width: 100%;
+  height: calc(100vh - 90px);
+  background-color: #141922;
+}
 
-.sidebar {
+.col {
+  width: 230px;
+  flex-shrink: 0;
+  height: 100%;
   border: 2px solid #f39;
   color: #fff;
   background-color: #000;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 999;
-  width: 230px;
-  height: calc(100vh - 90px);
+
 }
 
-
-/********************  MAIN  ********************/
-
-main {
-  background-color: #141922;
-  height: calc(100vh - 90px);
-  margin-left: 230px;
-  overflow: auto;
-  /*Altezza footer*/
+.col-2 {
+  width: calc(100% - 230px);
 }
+
+/********************  SIDEBAR  ********************/
+
 
 /*********  HEADER  *********/
 
@@ -172,7 +170,7 @@ main {
   top: 0;
   right: 0;
   z-index: 998;
-  width: 100%;
+  width: calc(100% - 230px);
   color: white;
   background-color: rgba(0, 0, 0, .7);
   height: 90px;
@@ -201,6 +199,13 @@ main {
 }
 
 
+/*********  ROW  *********/
+
+.card {
+  width: 200px;
+  height: 350px;
+  background-color: rgba(255, 255, 255, 0.479);
+}
 
 /********************  FOOTER  ********************/
 
