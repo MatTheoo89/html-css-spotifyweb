@@ -1,0 +1,193 @@
+/********************  RESET GENERALI  ********************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /*per font*/
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+/********************  UTILITY  ********************/
+
+/***************  DEBUG  ***************/
+
+.debug-1 {
+  background-color: rgba(255, 0, 0, .25);
+  border: 1px solid red;
+}
+
+.debug-2 {
+  background-color: rgba(0, 255, 0, .25);
+  border: 1px solid greenyellow;
+}
+
+.debug-3 {
+  background-color: rgba(0, 0, 255, .25);
+  border: 1px solid aqua;
+}
+
+/***************  FLEX  ***************/
+
+.d-flex {
+  display: flex;
+}
+
+.f-wrap {
+  flex-wrap: wrap;
+}
+
+.align-c {
+  align-items: center;
+}
+
+.j-between {
+  justify-content: space-between;
+}
+
+/********************  TESTO - FORMATTAZIONE  ********************/
+
+.text-c {
+  text-align: center;
+}
+
+.text-ju {
+  text-align: justify;
+}
+
+/***************  PADDING  ***************/
+
+.pad-1 {
+  padding: 1rem;
+}
+
+.pad-2 {
+  padding: 1rem;
+}
+
+.pad-3 {
+  padding: 1rem;
+}
+
+/***************  MARGIN  ***************/
+
+.m-bottom-1 {
+  margin-bottom: 1rem;
+}
+
+.m-bottom-2 {
+  margin-bottom: 2rem;
+}
+
+.m-bottom-3 {
+  margin-bottom: 3rem;
+}
+
+
+/********************  COMPONENTS  ********************/
+
+/* .container {
+  width: ;
+  /*inserire valore*/
+margin: 0 auto;
+}
+
+*/
+/********************  BUTTON  ********************/
+
+.btn {
+  border: none;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+}
+
+
+
+/********************  HEADER  ********************/
+
+header {
+  color: white;
+  background-color: rgb(0, 0, 0);
+  height: 100px;
+  justify-content: end;
+  padding-right: 50px;
+}
+
+
+/********************  NAVBAR  ********************/
+
+
+/********************  JUMBOTRON  ********************/
+
+
+/********************  MAIN  ********************/
+
+main {
+  background-color: #141922;
+  overflow: auto;
+}
+
+main .container {
+  height: calc(100vh - 100px);
+  /*Altezza footer*/
+}
+
+main .container .sidebar {
+  width: 230px;
+  height: calc(100vh - 100px);
+}
+
+
+/********************  FOOTER  ********************/
+
+footer {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  background-color: #252425;
+  height: 100px;
+}
+
+.f-left,
+.f-center,
+.f-right {
+  width: calc(100% / 3);
+  height: 100%;
+}
+
+
+/********************  DEBUG  ********************/
+
+.f-left {
+  background-color: antiquewhite;
+}
+
+.f-center {
+  background-color: aqua;
+}
+
+.f-right {
+  background-color: beige;
+}
+
+/********************  /DEBUG  ********************/
