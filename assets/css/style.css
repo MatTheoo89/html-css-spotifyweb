@@ -200,6 +200,27 @@ span {
   padding-right: 5px;
 }
 
+.sidebar-menu li {
+  position: relative;
+}
+
+.sidebar-menu ul li:after {
+  display: none;
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 15px;
+  background-color: greenyellow;
+  height: 36px;
+  width: 3px;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+
+.sidebar-menu ul li:hover:after {
+  display: block;
+}
+
 .playlist h3 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -244,6 +265,7 @@ span {
   margin-right: 10px;
 }
 
+
 /*********  HEADER  *********/
 
 .header {
@@ -272,8 +294,25 @@ span {
   color: #797B7F;
   font-weight: 600;
   text-transform: uppercase;
+  position: relative;
 }
 
+.main-menu .lista ul li:after {
+  display: none;
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  background-color: greenyellow;
+  height: 3px;
+  width: 35px;
+  transform: translate(-50%, -50%);
+  border-radius: 3px;
+}
+
+.main-menu .lista ul li:hover:after {
+  display: block;
+}
 
 /*********  ROW  *********/
 
