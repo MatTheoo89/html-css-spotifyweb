@@ -241,26 +241,32 @@ span {
   text-transform: uppercase;
 }
 
-.playlist .create-playlist .square {
-  width: 30px;
-  height: 30px;
-  background-color: #797B7F;
-  margin-right: 10px;
-}
 
-.playlist .create-playlist .square span {
-  font-size: 2rem;
-  color: #000;
+
+.playlist .create-playlist .square span,
+i {
+  font-size: .9rem;
+  color: #797B7F;
   font-weight: 700;
 }
 
-.crea-playlist:hover .crea-playlist-hover {
+.playlist .create-playlist .square i {
+  font-size: 2rem;
+  margin-right: 5px;
+}
+
+
+.playlist-menu li:hover span {
   color: #fff;
 }
 
-.playlist-menu {
-  height: calc(100vh - 531px);
-  overflow: auto;
+.playlist .create-playlist .square:hover span,
+.playlist .create-playlist .square:hover i {
+  color: #fff;
+}
+
+.top span:hover {
+  color: #fff;
 }
 
 .bottom-sidebar {
