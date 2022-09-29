@@ -704,6 +704,9 @@ footer {
     filter: unset;
   }
 
+  .bar-bottom img.down {
+    width: 85%;
+  }
 
   .bar-bottom .bottom img {
     padding: 3px;
