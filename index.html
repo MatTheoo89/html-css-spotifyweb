@@ -55,11 +55,19 @@
               <h3 class="m-bottom-1">Playlist</h3>
 
               <div class="create-playlist d-flex align-c m-bottom-1">
-                <div class="square d-flex align-c j-center">
-                  <span>+</span>
+
+                <div class="crea-playlist-hover d-flex align-c">
+
+                  <div class="square d-flex align-c j-center">
+                    <span>+</span>
+                  </div>
+
+                  <span>Crea Playlist</span>
+
                 </div>
-                <span>Crea Playlist</span>
+
               </div>
+
               <div class="playlist-menu">
                 <ul>
                   <li class="m-bottom-0_5"><span>Nome Playlist</span></li>
@@ -267,26 +275,27 @@
 
       <div class="f-left d-flex align-c pad-0_5">
 
-        <img src="assets/img/sinister.jpeg" alt="sinister">
-
-        <div class="f-left_text">
-          <h5>Sinister</h5>
-          <span>Brano Nome</span>
+        <div class="f-left_box d-flex align-c pad-0_5">
+          <img src="assets/img/sinister.jpeg" alt="sinister">
+          <div class="f-left_text">
+            <h5>Sinister</h5>
+            <span>Brano Nome</span>
+          </div>
         </div>
 
-        <div class="f-left_icon d-flex f-wrap">
+        <div class="f-left_icon d-flex align-c pad-0_5">
           <i class="fa-regular fa-heart"></i>
           <i class="fa-regular fa-folder"></i>
         </div>
       </div>
 
-      <div class="f-center d-flex align-c pad-0_5">
+      <div class="f-center d-flex align-c pad-0_5 debug-1">
         <div class="box-footer d-flex align-c">
 
           <div class="f-center_icon d-flex">
             <i class="fa-solid fa-shuffle"></i>
             <i class="fa-solid fa-backward-step"></i>
-            <i class="fa-regular fa-circle-play"></i>
+            <i id="up" class="fa-regular fa-circle-play"></i>
             <i class="fa-solid fa-forward-step"></i>
             <i class="fa-solid fa-arrow-rotate-right"></i>
           </div>
@@ -306,7 +315,7 @@
 
       <div class="f-right d-flex align-c pad-0_5">
 
-        <div class="f-right-icon">
+        <div class="f-right-icon d-flex">
           <i class="fa-solid fa-list"></i>
           <i class="fa-solid fa-display"></i>
           <i class="fa-solid fa-volume-high"></i>
