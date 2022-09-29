@@ -203,7 +203,7 @@ span {
 }
 
 .sidebar-menu li img {
-  filter: saturate(10%);
+  filter: invert(53%) sepia(7%) saturate(193%) hue-rotate(182deg) brightness(90%) contrast(91%);
 }
 
 .sidebar-menu li img,
@@ -221,6 +221,7 @@ span {
 .sidebar-menu li:hover span,
 .sidebar-menu li:hover img {
   color: #fff;
+  filter: unset;
 }
 
 .sidebar-menu ul li:first-child::after {
@@ -234,6 +235,11 @@ span {
   width: 3px;
   transform: translate(-50%, -50%);
   border-radius: 3px;
+}
+
+.playlist-menu {
+  height: calc(100vh - 531px);
+  /*somma altezze sidebar nel 100%*/
 }
 
 .playlist h3 {
@@ -567,6 +573,7 @@ footer {
 }
 
 .f-right_bar .bar-holder .bar {
+  width: 15px;
   position: relative;
 }
 
@@ -582,11 +589,12 @@ footer {
   transform: translateX(-20px) translateY(-5px);
 }
 
-.f-right_bar:hover .bar-holder {
+.f-right_bar:hover .bar-holder,
+.bar {
   background-color: #00ff00;
 }
 
-.f-right_bar .bar-holder:hover .bar .circle {
+.f-right_bar:hover .bar .circle {
   display: block;
 }
 
