@@ -430,10 +430,14 @@ footer {
 }
 
 .f-center_icon i {
-  color: #fff;
+  color: #797B7F;
   padding: 5px 15px;
   margin-bottom: 10px;
   font-size: 1.5rem;
+}
+
+.f-center_icon:hover i {
+  color: #fff;
 }
 
 .f-center_bar {
@@ -501,7 +505,7 @@ footer {
 
 
 /**  MEDIUM  **/
-@media screen and (max-whidth: 868px) {
+@media screen and (max-width: 868px) {
   .card {
     width: calc(100% / 4);
   }
@@ -509,7 +513,7 @@ footer {
 
 /**  SMALL  **/
 
-@media screen and (max-whidth: 500px) {
+@media screen and (max-width: 500px) {
   .card {
     width: calc(100% / 2);
   }
