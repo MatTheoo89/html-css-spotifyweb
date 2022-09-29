@@ -381,6 +381,27 @@ i {
   clip-path: circle(50%);
 }
 
+.card-imgage {
+  position: relative;
+}
+
+.card-imgage i {
+  display: none;
+  position: absolute;
+  font-size: 3rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #EFF0F0;
+}
+
+.card-imgage:hover img {
+  filter: brightness(50%);
+}
+
+.card-imgage:hover i {
+  display: block;
+}
 
 /********************  FOOTER  ********************/
 
