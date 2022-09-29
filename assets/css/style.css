@@ -236,10 +236,6 @@ span {
   border-radius: 3px;
 }
 
-.playlist {
-  height: calc(100vh - 300px);
-}
-
 .playlist h3 {
   font-size: 1rem;
   text-transform: uppercase;
@@ -259,6 +255,7 @@ span {
 }
 
 .playlist-menu {
+  height: calc(100vh - 531px);
   overflow: auto;
 }
 
@@ -360,16 +357,13 @@ span {
 }
 
 .card {
-  max-width: calc(100% / 6);
+  width: calc(100% / 6);
   text-align: center;
 }
 
-.card .card-text {
-  padding: 0 25px;
-}
 
 .card .card-text h3 {
-  font-size: .8rem;
+  font-size: .7rem;
   margin-bottom: .5rem;
 }
 
@@ -513,7 +507,25 @@ footer {
 
 /**  SMALL  **/
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 555px) {
+
+  .col {
+    display: none;
+  }
+
+  .col-2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .header {
+    width: 95%;
+  }
+
+  .btn {
+    transform: scale(.8);
+  }
+
   .card {
     width: calc(100% / 2);
   }
