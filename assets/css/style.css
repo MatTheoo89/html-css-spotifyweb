@@ -503,8 +503,28 @@ footer {
   height: 6px;
   width: 30%;
   border-radius: 50px;
+  position: relative;
 }
 
+.bar-holder .bar .circle {
+  display: none;
+  position: absolute;
+  left: 108%;
+  width: 15px;
+  height: 15px;
+  background-color: #e9e8e8;
+  border: 3px solid #e9e8e8;
+  border-radius: 50%;
+  transform: translateX(-20px) translateY(-5px);
+}
+
+.bar-holder:hover .bar {
+  background-color: #00ff00;
+}
+
+.bar-holder:hover .bar .circle {
+  display: block;
+}
 
 /*********  RIGHT  *********/
 
@@ -542,11 +562,33 @@ footer {
 .f-right_bar .bar-holder {
   background-color: #e9e8e8;
   height: 6px;
-  width: 30%;
+  width: 20%;
   border-radius: 50px;
 }
 
+.f-right_bar .bar-holder .bar {
+  position: relative;
+}
 
+.f-right_bar .bar-holder .bar .circle {
+  display: none;
+  position: absolute;
+  left: 378%;
+  width: 15px;
+  height: 15px;
+  background-color: #e9e8e8;
+  border: 3px solid #e9e8e8;
+  border-radius: 50%;
+  transform: translateX(-20px) translateY(-5px);
+}
+
+.f-right_bar:hover .bar-holder {
+  background-color: #00ff00;
+}
+
+.f-right_bar .bar-holder:hover .bar .circle {
+  display: block;
+}
 
 
 /************************************/
