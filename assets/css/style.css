@@ -331,9 +331,15 @@ i {
 
 /*********  MENU LISTA  *********/
 
+.main-menu .lista {
+  width: 85%;
+  margin: 0 auto;
+}
+
 .main-menu .lista ul li {
   padding: 0 15px;
   color: #797B7F;
+  font-size: .8rem;
   font-weight: 600;
   text-transform: uppercase;
   position: relative;
