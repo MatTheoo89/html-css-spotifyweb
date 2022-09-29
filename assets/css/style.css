@@ -148,13 +148,18 @@ span {
 /********************  BUTTON  ********************/
 
 .btn {
-  border: 2px solid #fff;
+  border: 2px solid #797B7F;
   border-radius: 50px;
   padding: 15px 35px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
+}
+
+.btn:hover {
+  border: 2px solid #fff;
+  scale: 1.1;
 }
 
 /********************  MAIN-WRAPPER  ********************/
@@ -184,12 +189,21 @@ span {
 
 .sidebar img {
   width: 75%;
+  max-height: 90px;
+}
+
+.sidebar-menu {
+  max-height: 120px;
 }
 
 .sidebar-menu li span {
   color: #797B7F;
   font-size: .8rem;
   font-weight: 600;
+}
+
+.sidebar-menu li img {
+  filter: saturate(10%);
 }
 
 .sidebar-menu li img,
@@ -204,8 +218,13 @@ span {
   position: relative;
 }
 
-.sidebar-menu ul li:after {
-  display: none;
+.sidebar-menu li:hover span,
+.sidebar-menu li:hover img {
+  color: #fff;
+}
+
+.sidebar-menu ul li:first-child::after {
+  display: block;
   content: '';
   position: absolute;
   left: -22px;
@@ -217,8 +236,8 @@ span {
   border-radius: 3px;
 }
 
-.sidebar-menu ul li:hover:after {
-  display: block;
+.playlist {
+  height: calc(100vh - 300px);
 }
 
 .playlist h3 {
@@ -239,12 +258,18 @@ span {
   font-weight: 700;
 }
 
+.playlist-menu {
+  overflow: auto;
+}
+
 .bottom-sidebar {
-  position: absolute;
-  bottom: 0;
+  position: fixed;
+  z-index: 997;
+  bottom: 90px;
   left: 0;
   padding-bottom: 10px;
-  width: 100%;
+  width: 230px;
+  background-color: #000;
 }
 
 .bottom-sidebar .top {
@@ -282,9 +307,13 @@ span {
 }
 
 .btn a {
-  color: #fff;
+  color: #797B7F;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.btn:hover a {
+  color: #fff;
 }
 
 /*********  MENU LISTA  *********/
@@ -297,8 +326,12 @@ span {
   position: relative;
 }
 
-.main-menu .lista ul li:after {
-  display: none;
+.main-menu .lista ul li:hover {
+  color: #fff;
+}
+
+.main-menu .lista ul li:first-child::after {
+  display: block;
   content: '';
   position: absolute;
   left: 50%;
@@ -310,9 +343,6 @@ span {
   border-radius: 3px;
 }
 
-.main-menu .lista ul li:hover:after {
-  display: block;
-}
 
 /*********  ROW  *********/
 
@@ -330,7 +360,7 @@ span {
 }
 
 .card {
-  width: calc(100% / 6);
+  max-width: calc(100% / 6);
   text-align: center;
 }
 
@@ -460,4 +490,27 @@ footer {
   height: 6px;
   width: 30%;
   border-radius: 50px;
+}
+
+
+
+
+/************************************/
+/** RESPONSIVE **/
+/************************************/
+
+
+/**  MEDIUM  **/
+@media screen and (max-whidth: 868px) {
+  .card {
+    width: calc(100% / 4);
+  }
+}
+
+/**  SMALL  **/
+
+@media screen and (max-whidth: 500px) {
+  .card {
+    width: calc(100% / 2);
+  }
 }
