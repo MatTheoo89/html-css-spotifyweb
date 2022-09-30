@@ -240,6 +240,7 @@ span {
 .playlist-menu {
   height: calc(100vh - 531px);
   /*somma altezze sidebar nel 100%*/
+  overflow: auto;
 }
 
 .playlist h3 {
@@ -418,6 +419,8 @@ i {
 /********************  FOOTER  ********************/
 
 footer {
+  position: fixed;
+  z-index: 999;
   width: 100%;
   background-color: #252425;
   height: 90px;
@@ -439,8 +442,12 @@ footer {
   width: 70%;
 }
 
+.col-icon {
+  width: 30%;
+}
+
 .col-song img {
-  width: 60px;
+  width: 55px;
   margin-right: 10px;
 }
 
@@ -578,7 +585,7 @@ footer {
 
 /**  MEDIUM  **/
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 968px) {
 
   .main-menu .lista li {
     font-size: .8rem;
@@ -588,10 +595,20 @@ footer {
     width: calc(100% / 4);
   }
 
-  /* .f-center_icon i {
-    font-size: 1rem;
-    padding: 5px 10px;
-  } */
+  .col-song {
+    width: 80%;
+    min-width: 130px;
+  }
+
+  .col-icon {
+    width: 20%;
+    flex-direction: column;
+  }
+
+  .col-icon i {
+    margin-bottom: 10px;
+
+  }
 }
 
 
