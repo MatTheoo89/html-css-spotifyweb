@@ -182,7 +182,6 @@ span {
 .col-2 {
   width: calc(100% - 230px);
   overflow: auto;
-
 }
 
 /********************  SIDEBAR  ********************/
@@ -390,7 +389,7 @@ i {
   margin-bottom: .5rem;
 }
 
-.card img.circle {
+.card img.circled {
   clip-path: circle(50%);
 }
 
