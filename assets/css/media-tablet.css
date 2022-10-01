@@ -1,0 +1,14 @@
+@media screen and (max-width: 768px) {
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    width: calc(100% / 2);
+  }
+
+  .footer-left .col-icon {
+    flex-direction: column;
+  }
+}
